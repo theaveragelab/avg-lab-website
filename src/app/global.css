@@ -7,18 +7,54 @@ html *
 {
     font-family: "Computer Modern Serif", serif;
 }
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+header
+{
+border-bottom: 1px solid #d3d3d3;
+position: fixed;
+top: 0;
+transition: all 0.3s ease;
+width: 100%;
+z-index: 100;
+background: #fff;
 }
 
+header .wrap
+{
+    max-width: 1246px;
+padding-top: 40px;
+padding-bottom: 30px;
+display: flex;
+justify-content: space-between;
+padding-left: 0;
+padding-right: 0;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+ul.menu li
+{
+    color: theme('colors.avg-blue');
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 40px; /* Optional: adds some space between items */
+    align-items: center;
+position: relative;
+margin-left: auto;
+}
+.image-wrapper {
+display: flex;
+position: relative;
+}
+header .logo {
+width: 300px;
+}
+
+img {
+  max-height: 40px;
+  width: auto;
+  height: auto;
 }

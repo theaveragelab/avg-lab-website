@@ -11,10 +11,9 @@ export default function RootLayout({
 	    <body>
             <header>
             <nav>
-            {/* Navigation items */}
-	    <ul>
+	    <ul class="menu">
 	    <li><Link href="/">
-	    <img src="theaveragelab.png" style={{width: '100px'}}/>
+	    <img class="image" src="theaveragelab.png"/>
 	    </Link></li>	    
 	    <li><Link href="/about">About</Link></li>
 	    <li><Link href="/team">Team</Link></li>
