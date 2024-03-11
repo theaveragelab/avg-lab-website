@@ -13,7 +13,10 @@ export default function RootLayout({
             <nav>
 	    <ul class="menu">
 	    <li><Link href="/">
-	    <img class="image" src="theaveragelab.png"/>
+	    <div class="img-wrapper">
+	    <img src="theaveragelab.svg"/>
+	    </div>	    
+
 	    </Link></li>	    
 	    <li><Link href="/about">About</Link></li>
 	    <li><Link href="/team">Team</Link></li>

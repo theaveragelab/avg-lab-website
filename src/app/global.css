@@ -17,18 +17,9 @@ transition: all 0.3s ease;
 width: 100%;
 z-index: 100;
 background: #fff;
+align-items: center;
 }
 
-header .wrap
-{
-    max-width: 1246px;
-padding-top: 40px;
-padding-bottom: 30px;
-display: flex;
-justify-content: space-between;
-padding-left: 0;
-padding-right: 0;
-}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -45,16 +36,13 @@ ul.menu li
 position: relative;
 margin-left: auto;
 }
-.image-wrapper {
-display: flex;
-position: relative;
-}
-header .logo {
-width: 300px;
-}
 
+
+.img-wrapper {
+    height: 80px;
+    position: relative;
+}
 img {
-  max-height: 40px;
-  width: auto;
-  height: auto;
+    height: 100%;
+    width: 100%;
 }
