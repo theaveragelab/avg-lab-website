@@ -1,11 +1,31 @@
+import Link from 'next/link'
+
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
+    return (
+	<>
+	    <body>
+            <header>
+	    MY HEADER
+            <nav>
+            {/* Navigation items */}
+	    <ul>
+	    <li><Link href="/">Home</Link></li>	    
+	    <li><Link href="/about">About</Link></li>
+	    <li><Link href="/team">Team</Link></li>
+	    <li><Link href="/research">Research</Link></li>
+	    <li><Link href="/events">Events</Link></li>
+	    <li><Link href="/press">Press</Link></li>
+	    </ul>
+            </nav>
+            </header>
+            <main>
+            {children}
+        </main>
+	    </body>
+	    </>
+    )
 }
