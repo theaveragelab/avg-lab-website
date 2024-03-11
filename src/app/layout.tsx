@@ -1,3 +1,4 @@
+import './global.css'
 import Link from 'next/link'
 
 export default function RootLayout({
@@ -9,11 +10,12 @@ export default function RootLayout({
 	<>
 	    <body>
             <header>
-	    MY HEADER
             <nav>
             {/* Navigation items */}
 	    <ul>
-	    <li><Link href="/">Home</Link></li>	    
+	    <li><Link href="/">
+	    <img src="theaveragelab.png" style={{width: '100px'}}/>
+	    </Link></li>	    
 	    <li><Link href="/about">About</Link></li>
 	    <li><Link href="/team">Team</Link></li>
 	    <li><Link href="/research">Research</Link></li>
