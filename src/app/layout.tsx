@@ -8,13 +8,14 @@ export default function RootLayout({
 }) {
     return (
 	<>
+	<link rel="stylesheet" href="https://use.typekit.net/lrf5xdx.css"></link>
 	    <body>
             <header>
             <nav>
+		<img class="image" src="theaveragelab.png"/>
 	    <ul class="menu">
 	    <li><Link href="/">
-	    <img class="image" src="theaveragelab.png"/>
-	    </Link></li>	    
+	    </Link></li >	    
 	    <li><Link href="/about">About</Link></li>
 	    <li><Link href="/team">Team</Link></li>
 	    <li><Link href="/research">Research</Link></li>
