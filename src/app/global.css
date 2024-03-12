@@ -8,79 +8,140 @@
     font-family: "Computer Modern";
 } */
 
-header
-{
-border-bottom: 1px solid #d3d3d3;
-position: fixed;
-top: 0;
-transition: all 0.3s ease;
-width: 100%;
-z-index: 100;
-background: #fff;
+header {
+  /* border-bottom: 1px solid #d3d3d3; */
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: 100;
+  background: none;
+  align-items: center;
 }
 
-header .wrap
-{
-max-width: 1246px;
-padding-top: 40px;
-padding-bottom: 30px;
-display: flex;
-justify-content: space-between;
-padding-left: 0;
-padding-right: 0;
-}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-ul.menu li
+/* ul.menu li
 {
-  font-family: "Computer Modern";
-  font-weight: bold;
-  /* font-family: "capitana", sans-serif; */
-    /* font-weight: 300; */
-    /* font-style: normal; */
-    color: black; /* theme('colors.avg-blue'); */
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-family: "capitana", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
     font-size: 40px;
     display: inline-block;
-    margin-right: 40px; /* Optional: adds some space between items */
+    margin-right: 40px;
     align-items: center;
     padding: 3px;
     position: relative;
     margin-left: auto;
     font-size: 16;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 10px 20px;
     
-}
-.image-wrapper {
-display: flex;
-position: relative;
+} */
+header {
+  position: fixed;
+  top: 0;
+  width: 200%;
+  z-index: 100;
+  display: flex;
+  background: none;
+  border-bottom: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust as needed */
 }
 
 nav {
-  display: flex; 
-  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 14;
+  position: fixed;
+  top: 0; /* Place it at the top of the viewport */
+  left: 0; /* Align it to the left side */
+  width: 100%; /* Take up the full width of the viewport */
+  padding: 1%;
+  padding-bottom: 2%;
+  z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-bottom: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
 }
 
-header .logo {
-width: 300px;
+main {
+  padding-top: 60px;
+  /* width: 20%; */
+}
+
+body {
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* width: 80%;
+  max-width: 1200px; */
+}
+
+.menu li {
+  margin: 0 20px; /* Adjust as needed */
+}
+
+.search {
+  /* Style your search icon here */
 }
 
 img {
-  max-height: 40px;
-  width: auto;
-  /* height: auto; */
+  height: 60%;
+  width: 60%;
 }
 
 p {
   font-size: 20;
 }
 
-.articleText {
-  padding: 20px 300px 20px 300px;  
-  background-color: #f5f5f5;
-  text-align: left;
-  font-family: "Computer Modern Serif", serif;
+.homeBackground {
+  background-image: url("/AdobeStock_688045192.jpeg");
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-size: cover; /* Covers the entire viewport */
+  background-position: center; /* Centers the background image */
+  width: 100%; /* Make sure the div takes up the full width */
+  height: 100vh; /* Set a height to ensure the div has dimensions */
+  z-index: -2; /* Ensure the background is behind other content */
+}
 
+.articleText {
+  padding: 100px 300px 20px 300px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+  z-index: 1;
+  font-family: "Computer Modern Serif", serif;
+  border: rgba(0, 255, 255, 1);
+  position: 10px;
+  /* position:fixed; */
 }
